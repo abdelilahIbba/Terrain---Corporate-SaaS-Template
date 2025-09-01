@@ -1,0 +1,137 @@
+:root {
+    --sand-beige: #F5F5DC;
+    --terracotta: #E2725B;
+    --sage-green: #9CAF88;
+    --deep-brown: #3E2723;
+    --light-cream: #FDFDF6;
+    --primary-soft: rgba(157, 175, 136, 0.1);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--deep-brown);
+    background-color: var(--light-cream);
+    padding-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.accent-font {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--terracotta);
+}
+
+.btn-primary {
+    background-color: var(--terracotta);
+    border-color: var(--terracotta);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #d1654f;
+    border-color: #d1654f;
+}
+
+.btn-outline-primary {
+    border-color: var(--terracotta);
+    color: var(--terracotta);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--terracotta);
+    color: white;
+}
+
+.navbar {
+    background-color: var(--light-cream);
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    padding: 7rem 0;
+    background-color: var(--sand-beige);
+}
+
+.section-padding {
+    padding: 5rem 0;
+}
+
+.bg-light-alt {
+    background-color: var(--primary-soft);
+}
+
+.bg-primary-soft {
+    background-color: var(--primary-soft);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(157, 175, 136, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--sage-green);
+    font-size: 1.8rem;
+}
+
+.client-logo {
+    max-height: 40px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--terracotta);
+}
+
+.footer {
+    background-color: var(--deep-brown);
+    color: white;
+    padding: 5rem 0 2rem;
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .section-padding {
+        padding: 3rem 0;
+    }
+    
+    .accent-font {
+        font-size: 1.5rem;
+    }
+}

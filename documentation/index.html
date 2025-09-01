@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Terrain SaaS Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+        
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 80px 0 0;
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+            background-color: #f8f9fa;
+        }
+        
+        .sidebar-sticky {
+            position: relative;
+            top: 0;
+            height: calc(100vh - 80px);
+            padding-top: .5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        
+        .sidebar .nav-link {
+            font-weight: 500;
+            color: #333;
+            padding: 0.5rem 1rem;
+        }
+        
+        .sidebar .nav-link.active {
+            color: #E2725B;
+        }
+        
+        .main-content {
+            margin-left: 240px;
+            padding: 80px 2rem 2rem;
+        }
+        
+        .code-block {
+            background-color: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .color-swatch {
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <span style="font-family: 'Playfair Display', serif; color: #E2725B;">Terrain</span> Documentation
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#introduction">
+                                Introduction
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#file-structure">
+                                File Structure
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#customization">
+                                Customization
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#colors">
+                                Color Scheme
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fonts">
+                                Typography
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#components">
+                                Components
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#support">
+                                Support
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 main-content">
+                <section id="introduction">
+                    <h1 class="display-4 mb-4">Terrain SaaS Template Documentation</h1>
+                    <p class="lead">Thank you for purchasing Terrain - a premium corporate SaaS template.</p>
+                    <p>This documentation will help you understand the template structure, customize it to your needs, and deploy it successfully.</p>
+                    
+                    <h3 class="mt-5">Template Features</h3>
+                    <ul>
+                        <li>Fully responsive design (desktop, tablet, mobile)</li>
+                        <li>Built with Bootstrap 5</li>
+                        <li>Earth tone professional color scheme</li>
+                        <li>Modern and clean design</li>
+                        <li>Interactive elements and animations</li>
+                        <li>Well-organized file structure</li>
+                        <li>Comprehensive documentation</li>
+                    </ul>
+                </section>
+
+                <section id="file-structure" class="mt-5">
+                    <h2>File Structure</h2>
+                    <p>The template follows a organized file structure for easy customization:</p>
+                    
+                    <div class="code-block">
+                        <pre>my-saas-template/
+├── index.html
+├── pages/
+│   ├── about.html
+│   ├── pricing.html
+│   └── contact.html
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   └── style.min.css
+│   ├── js/
+│   │   ├── main.js
+│   │   └── main.min.js
+│   ├── img/
+│   └── fonts/
+├── documentation/
+│   └── index.html
+└── README.md</pre>
+                    </div>
+                    
+                    <h4 class="mt-4">Key Files:</h4>
+                    <ul>
+                        <li><strong>index.html</strong> - Main homepage</li>
+                        <li><strong>pages/</strong> - Additional pages (about, pricing, contact)</li>
+                        <li><strong>assets/css/style.css</strong> - Main stylesheet with custom CSS</li>
+                        <li><strong>assets/js/main.js</strong> - Custom JavaScript functionality</li>
+                        <li><strong>assets/img/</strong> - Directory for all images</li>
+                    </ul>
+                </section>
+
+                <section id="customization" class="mt-5">
+                    <h2>Customization Guide</h2>
+                    
+                    <h4 class="mt-4">Updating Content</h4>
+                    <p>To update text content, simply edit the HTML files and replace the placeholder text with your actual content.</p>
+                    
+                    <h4 class="mt-4">Changing Images</h4>
+                    <p>Replace the placeholder images in the <code>assets/img/</code> directory with your own images. Update the image paths in the HTML files accordingly.</p>
+                    
+                    <h4 class="mt-4">Modifying Colors</h4>
+                    <p>The template uses CSS custom properties for easy color customization. Edit the values in the <code>:root</code> section of <code>assets/css/style.css</code>:</p>
+                    
+                    <div class="code-block">
+                        <pre>:root {
+    --sand-beige: #F5F5DC;
+    --terracotta: #E2725B;
+    --sage-green: #9CAF88;
+    --deep-brown: #3E2723;
+    --light-cream: #FDFDF6;
+    --primary-soft: rgba(157, 175, 136, 0.1);
+}</pre>
+                    </div>
+                </section>
+
+                <section id="colors" class="mt-5">
+                    <h2>Color Scheme</h2>
+                    <p>The template uses a unique earth tone color scheme that conveys professionalism and warmth:</p>
+                    
+                    <div class="d-flex flex-wrap my-4">
+                        <div>
+                            <div class="color-swatch" style="background-color: #F5F5DC;"></div>
+                            <p>Sand Beige<br>#F5F5DC</p>
+                        </div>
+                        <div>
+                            <div class="color-swatch" style="background-color: #E2725B;"></div>
+                            <p>Terracotta<br>#E2725B</p>
+                        </div>
+                        <div>
+                            <div class="color-swatch" style="background-color: #9CAF88;"></div>
+                            <p>Sage Green<br>#9CAF88</p>
+                        </div>
+                        <div>
+                            <div class="color-swatch" style="background-color: #3E2723;"></div>
+                            <p>Deep Brown<br>#3E2723</p>
+                        </div>
+                        <div>
+                            <div class="color-swatch" style="background-color: #FDFDF6;"></div>
+                            <p>Light Cream<br>#FDFDF6</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="fonts" class="mt-5">
+                    <h2>Typography</h2>
+                    <p>The template uses three Google Fonts for a professional yet distinctive look:</p>
+                    
+                    <ul>
+                        <li><strong>Poppins</strong> - Used for headings</li>
+                        <li><strong>Lato</strong> - Used for body text</li>
+                        <li><strong>Playfair Display</strong> - Used for accents and logo</li>
+                    </ul>
+                    
+                    <p>To change fonts, update the Google Fonts link in the <code>&lt;head&gt;</code> section and modify the CSS font-family properties.</p>
+                </section>
+
+                <section id="components" class="mt-5">
+                    <h2>Components & Features</h2>
+                    
+                    <h4 class="mt-4">Interactive Elements</h4>
+                    <ul>
+                        <li><strong>Animated counters</strong> - Statistics that animate when scrolled into view</li>
+                        <li><strong>Smooth scrolling</strong> - Elegant scroll animations for elements</li>
+                        <li><strong>Pricing toggle</strong> - Switch between monthly and annual pricing</li>
+                        <li><strong>Responsive navigation</strong> - Collapses to hamburger menu on mobile</li>
+                    </ul>
+                    
+                    <h4 class="mt-4">Bootstrap Components</h4>
+                    <p>The template utilizes various Bootstrap 5 components including:</p>
+                    <ul>
+                        <li>Navbar</li>
+                        <li>Cards</li>
+                        <li>Buttons</li>
+                        <li>Forms</li>
+                        <li>Grid system</li>
+                        <li>Accordion (FAQ section)</li>
+                    </ul>
+                </section>
+
+                <section id="support" class="mt-5">
+                    <h2>Support</h2>
+                    <p>If you encounter any issues or have questions about customizing the template, please refer to the following resources:</p>
+                    
+                    <ul>
+                        <li>Check this documentation for relevant sections</li>
+                        <li>Review the Bootstrap documentation at <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">getbootstrap.com</a></li>
+                        <li>Ensure all file paths are correct when moving files</li>
+                    </ul>
+                    
+                    <p>For technical support, please contact us through the platform where you purchased the template.</p>
+                    
+                    <div class="alert alert-info mt-4">
+                        <strong>Note:</strong> This documentation is included in the template package. Make sure to keep it for future reference.
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
